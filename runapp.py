@@ -1,4 +1,4 @@
+from google.appengine.ext.webapp.util import run_wsgi_app
 from bp_log import app
 
-app.debug = True
-app.run()
+run_wsgi_app(app)
