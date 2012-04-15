@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<table class="table table-striped">
+  <thead>
+    <th>#</th>
+    <th>Time</th>
+    <th>Systolic</th>
+    <th>Diastolic</th>
+    <th>Pulse</th>
+  </thead>
+  <tbody>
+    {%- for  meas in meas_dict %}
+    <tr>
+      <td>{{ loop.index }}</td>
+      {%- for key in ['time', 'sys', 'dia', 'pulse'] %}
+      <td>{{ meas[key] }}</td>
+      {%- endfor %}
+    </tr>
+    {%- endfor %}
+  </tbody>
+</table>
+{% endblock %}

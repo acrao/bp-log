@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form class="form-horizontal" method="POST" action={{ url_for('meas_add') }}>
+  <fieldset>
+    <div>
+      {{ form.sys.label(class="control-label") }}
+      {{ form.sys(class="span2") }}
+    </div>
+    <div>
+      {{ form.dia.label(class="control-label") }}
+      {{ form.dia(class="span2") }}
+    </div>
+    <div>
+      {{ form.pulse.label(class="control-label") }}
+      {{ form.pulse(class="span2") }}
+    </div>
+    <div class="form-actions">
+      <button type=".submit" class="btn btn-primary">Save</button>
+    </div>
+  </fieldset>
+</form>
+{% endblock%}

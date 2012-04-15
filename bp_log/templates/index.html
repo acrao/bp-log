@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div style="text-align: center"><h1>Welcome to BP Log</h1>
+  <h2>Nav links</h2>
+  <div style="text-align: left"><ul>
+      <li><a href={{ url_for('meas_add') }} >Add measurements</a></li>
+      <li><a href={{ url_for('show_meas') }} >Show measurements</a></li>
+    </ul>
+  </div>
+</div>
+{% endblock %}
