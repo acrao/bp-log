@@ -1,4 +1,4 @@
-application: bp-log-hdr
+application: bp-log
 version: 1
 runtime: python
 api_version: 1
