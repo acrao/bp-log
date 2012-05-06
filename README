@@ -1,2 +1,11 @@
 bp-log
+______
 
+bp-log is a flask application that monitors and analyzes blood pressure readings.
+
+It is hosted at http://bp-log.appspot.com
+
+bp-log development
+__________________
+
+Interested in contributing to bp-log? Some of the issues tagged as "starter-tasks" will help get the ball rolling.
